@@ -71,8 +71,7 @@ With the image locally available, install the wrapper scripts using:
 ```bash
 docker run -it --rm \
   --volume /usr/local/bin:/target \
-  --env BROWSER_BOX_REPO=sameersbn \
-  sameersbn/browser-box:2018.07.21 install
+    cerebro46/browser install
 ```
 
 If you want the settings for chrome and firefox to persist
@@ -83,8 +82,7 @@ docker run -it --rm \
   --volume /usr/local/bin:/target \
   --env CHROME_USERDATA=/home/username/.chrome \
   --env FIREFOX_USERDATA=/home/username/.mozillia \
-  --env BROWSER_BOX_REPO=sameersbn \
-  sameersbn/browser-box:2018.07.21 install
+    cerebro46/browser install
 ```
 
 
@@ -127,7 +125,7 @@ To upgrade to newer releases:
   ```bash
   docker run -it --rm \
     --volume /usr/local/bin:/target \
-    sameersbn/browser-box:2018.07.21 install
+    cerebro46/browser install
   ```
 
 ## Uninstallation
@@ -135,7 +133,7 @@ To upgrade to newer releases:
 ```bash
 docker run -it --rm \
   --volume /usr/local/bin:/target \
-  sameersbn/browser-box:2018.07.21 uninstall
+  cerebro46/browser uninstall
 ```
 
 ## Shell Access
