@@ -57,13 +57,13 @@ Automated builds of the image are available on [Dockerhub](https://hub.docker.co
 > **Note**: Builds are also available on [Quay.io](https://quay.io/repository/sameersbn/browser-box)
 
 ```bash
-docker pull sameersbn/browser-box:2018.07.21
+docker pull cerebro46/browser
 ```
 
 Alternatively you can build the image yourself.
 
 ```bash
-docker build -t sameersbn/browser-box github.com/sameersbn/docker-browser-box
+docker build -t cerebro46/browser .
 ```
 
 With the image locally available, install the wrapper scripts using:
