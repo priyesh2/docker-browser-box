@@ -117,7 +117,7 @@ To upgrade to newer releases:
   1. Download the updated Docker image:
 
   ```bash
-  docker pull sameersbn/browser-box:2018.07.21
+  docker pull cerebro46/browser
   ```
 
   2. Run `install` to make sure the host scripts are updated.
