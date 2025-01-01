@@ -1,5 +1,7 @@
 FROM ubuntu:jammy
 
+LABEL maintainer="sameer@damagehead.com"
+
 RUN apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
     ca-certificates \
@@ -39,6 +41,13 @@ RUN apt-get update \
     firefox \
  && update-locale LANG=C.UTF-8 LC_MESSAGES=POSIX \
  && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update && apt-get install -y curl \
+    && echo "Downloading Firefox..." \
+    && curl -L "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US" -o firefox.tar.bz2 \
+    && echo "Extracting Firefox..." \
+    && tar -xjf firefox.tar.bz2 -C /opt/ \
+    && ln -s /opt/firefox/firefox /usr/local/bin/firefox
 
 COPY scripts/ /var/cache/browser-box/
 COPY entrypoint.sh /sbin/entrypoint.sh
