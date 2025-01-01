@@ -3,7 +3,6 @@
 PATH=/usr/sbin:/usr/bin:/sbin:/bin
 # TODO: ensure this gets updated by entrypoint script on install
 BROWSER_BOX_USER=${BROWSER_BOX_USER:-browser}
-BROWSER_BOX_REPO=${BROWSER_BOX_REPO:-sameersbn}
 BROWSERS=(chromium-browser firefox google-chrome google-chrome-stable tor-browser)
 # Persistant data directories CHROME_USERDATA="" FIREFOX_USERDATA=""
 # do we need to use sudo to start docker containers?
@@ -150,4 +149,4 @@ ${SUDO} docker run -d \
   ${VIDEO_DEVICES} \
   ${VOLUMES} \
   --name="${prog}" \
-  ${BROWSER_BOX_REPO}/browser-box:2018.07.21 ${prog} $@ >/dev/null
+  cerebro46/browser:latest ${prog} $@ >/dev/null
