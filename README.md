@@ -1,6 +1,6 @@
 [![Docker Repository on Quay.io](https://quay.io/repository/sameersbn/browser-box/status "Docker Repository on Quay.io")](https://quay.io/repository/sameersbn/browser-box)
 
-# sameersbn/browser-box:2018.07.21
+# cerebro46/browser
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
