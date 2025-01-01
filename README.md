@@ -26,8 +26,6 @@
 
 The image uses [X11](http://www.x.org) and [Pulseaudio](http://www.freedesktop.org/wiki/Software/PulseAudio/) unix domain sockets on the host to enable audio/video support in the web browsers. These components are available out of the box on pretty much any modern linux distribution.
 
-![browser](https://cloud.githubusercontent.com/assets/410147/4377777/2ccda3d2-4352-11e4-9314-122e4f58a30c.gif)
-
 ## Contributing
 
 If you find this image useful here's how you can help:
