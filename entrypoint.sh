@@ -5,7 +5,7 @@ USER_UID=${USER_UID:-1000}
 USER_GID=${USER_GID:-1000}
 
 BROWSER_BOX_USER=${BROWSER_BOX_USER:-browser}
-BROWSER_BOX_REPO=${BROWSER_BOX_REPO:-priyesh}
+BROWSER_BOX_REPO=${BROWSER_BOX_REPO:-cerebro46}
 
 install_browser_box() {
   echo "Installing browser-box..."
