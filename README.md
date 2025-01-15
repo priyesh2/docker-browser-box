@@ -31,9 +31,7 @@ The image uses [X11](http://www.x.org) and [Pulseaudio](http://www.freedesktop.o
 If you find this image useful here's how you can help:
 
 - Send a pull request with your awesome features and bug fixes
-- Help users resolve their [issues](../../issues?q=is%3Aopen+is%3Aissue).
-- Support the development of this image with a [donation](http://www.damagehead.com/donate/)
-
+  
 ## Issues
 
 Before reporting your issue please try updating Docker to the latest version and check if it resolves the issue. Refer to the Docker [installation guide](https://docs.docker.com/installation) for instructions.
